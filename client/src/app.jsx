@@ -15,7 +15,7 @@ async function callApi(path) {
     headers: {
       authorization: `Bearer ${accessToken}`
     }
-  }).then(r => r.json());
+  }).then(r => r.text());
 }
 
 async function callCustomApi() {
