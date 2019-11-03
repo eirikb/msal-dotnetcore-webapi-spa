@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "author": "Eirik Brandtzæg <eirikb@eirikb.no>",
+  "dependencies": {
+    "@eirikb/domdom": "^1.5.1",
+    "msal": "^1.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  },
+
+  "browserslist": ["last 1 Chrome versions"]
+}
