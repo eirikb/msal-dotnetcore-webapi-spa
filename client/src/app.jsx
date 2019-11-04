@@ -6,8 +6,11 @@ const dd = domdom();
 const scopes = ['api://80ce0b17-ac0b-43f5-add5-cd8c3412b6c9/Api.ReadWrite'];
 const clientId = '80ce0b17-ac0b-43f5-add5-cd8c3412b6c9';
 const apiUrl = 'http://localhost:5000';
+// For tenant you can either use tenant name/url or TenantId
+const tenant = '*****.onmicrosoft.com';
+const authority = `https://login.microsoft.com/${tenant}`;
 
-const msal = new UserAgentApplication({ auth: { clientId } });
+const msal = new UserAgentApplication({ auth: { clientId, authority } });
 
 async function callApi(path) {
   const { accessToken } = await msal.acquireTokenSilent({ scopes });
