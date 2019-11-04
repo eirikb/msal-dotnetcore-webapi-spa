@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Client](#client)
+- [API](#api)
+- [Azure AD App](#azure-ad-app)
+  - [IDs](#ids)
+  - [Authentication](#authentication)
+  - [Expose API](#expose-api)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Secure your in-house API for your own organization with MSAL.  
 Minimal minimum setup in order to use msal to _authenticate_ against a custom dotnet core webapi.
 No authorization, identification only.  
